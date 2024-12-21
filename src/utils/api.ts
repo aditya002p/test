@@ -7,7 +7,7 @@ const getBaseUrl = () => {
 
   // If we're running on the server
   if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`;
+    return `${process.env.VERCEL_URL}`;
   }
 
   // Fallback for local development
